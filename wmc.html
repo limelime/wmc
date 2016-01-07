@@ -1,203 +1,205 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
-	<head>
-	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	  <title>World Market Clocks</title>
-	
-		<meta name="title" content="World Market Clocks" />
-		<meta name="keywords" content="World Market Clocks, Stock Martkets" />
-		<meta name="description" content="World Market Clocks" />
-		<meta name="robots" content="follow,index" />
-	
-		<link href="lib/joaquinnunez-clock/css/style.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="css/WorldMarketClocks.css" media="screen" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" type="text/css" href="lib/joaquinnunez-clock/css/analog.css"/> 
-		<link rel="stylesheet" type="text/css" href="lib/joaquinnunez-clock/css/digital.css"/>
-	
-		<script src="lib/joaquinnunez-clock/js/jquery.js" type="text/javascript"></script>
-		<script src="lib/joaquinnunez-clock/js/jquery.clock.js" type="text/javascript"></script>
-	
-		<script type="text/javascript">
-			$(document).ready(function() 
-			{
-				$('#new-york-analog-clock').clock({offset: '-5', type: 'analog'});
-				$('#new-york-digital-clock').clock({offset: '-5', type: 'digital'});
-		   
-				$('#london-analog-clock').clock({offset: '0', type: 'analog'});
-				$('#london-digital-clock').clock({offset: '0', type: 'digital'});
-				
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>World Market Clocks</title>
+  
+    <meta name="title" content="World Market Clocks" />
+    <meta name="keywords" content="World Market Clocks, Stock Martkets" />
+    <meta name="description" content="World Market Clocks" />
+    <meta name="robots" content="follow,index" />
+    
+    <link href="css/WorldMarketClocks.css" media="screen" rel="stylesheet" type="text/css" />
+    
+    <!-- Clock library --> 
+    <link href="lib/joaquinnunez-clock/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="lib/joaquinnunez-clock/css/analog.css"/> 
+    <link rel="stylesheet" type="text/css" href="lib/joaquinnunez-clock/css/digital.css"/>
+  
+    <script src="lib/joaquinnunez-clock/js/jquery.js" type="text/javascript"></script>
+    <script src="lib/joaquinnunez-clock/js/jquery.clock.js" type="text/javascript"></script>
+  
+    <script type="text/javascript">
+      $(document).ready(function() 
+      {
+        $('#new-york-analog-clock').clock({offset: '-5', type: 'analog'});
+        $('#new-york-digital-clock').clock({offset: '-5', type: 'digital'});
+       
+        $('#london-analog-clock').clock({offset: '0', type: 'analog'});
+        $('#london-digital-clock').clock({offset: '0', type: 'digital'});
+        
         $('#frankfurt-analog-clock').clock({offset: '+1', type: 'analog'});
-        $('#frankfurt-digital-clock').clock({offset: '+1', type: 'digital'});				
-				
+        $('#frankfurt-digital-clock').clock({offset: '+1', type: 'digital'});       
+        
         $('#shanghai-analog-clock').clock({offset: '+8', type: 'analog'});
         $('#shanghai-digital-clock').clock({offset: '+8', type: 'digital'}); 
-		        
+            
         $('#tokyo-analog-clock').clock({offset: '+9', type: 'analog'});
         $('#tokyo-digital-clock').clock({offset: '+9', type: 'digital'}); 
-			});
-		</script>
-	
-	</head>
-	<body>
-	
-<table id="world-market-clocks">
-  <tr>
-    <th class="market-name">New York</th>
-    <th class="market-name">London</th>
-    <th class="market-name">Frankfurt</th>
-    <th class="market-name">Shanghai</th>
-    <th class="market-name">Tokyo</th>
-  </tr>
+      });
+    </script>
   
-  <tr>
-    <td class="opening">09:30 - 16:00</td><!-- NY -->
-    <td class="opening">08:00 - 16:30</td><!-- london -->
-    <td class="opening">09:00 - 17:30</td><!-- Frankfurt -->
-    <td class="opening">09:30 - 15:00</td><!-- shanghai -->
-    <td class="opening">09:00 - 15:00</td><!-- tokyo -->
-  </tr>  
+  </head>
+  <body>
   
-  <tr>
-  
-    <td>
-			<div id="new-york"><!-- -5 -->
-			  <div style="text-align: center;">
-			    <ul id="new-york-analog-clock" class="analog"> 
-			      <li class="hour"></li>
-			      <li class="min"></li>
-			      <li class="sec"></li>
-			    </ul>
-			  </div>
-			
-			  <div style="text-align: center;">
-			    <!-- <span class="title">A digital clock</span><br/> -->
-			    <ul id="new-york-digital-clock" class="digital"> 
-            <li class="hour"></li><li class="colon">:</li>
-            <li class="min"></li><li class="colon">:</li>
-			      <li class="sec"></li>
-			      <li class="meridiem"></li>
-			    </ul>
-			  </div>  
-			</div>    
-    </td>
-    
-    
-    <td>
-      <div id="london"><!-- 0 -->
-        <div style="text-align: center;">
-          <ul id="london-analog-clock" class="analog"> 
-            <li class="hour"></li>
-            <li class="min"></li>
-            <li class="sec"></li>
-          </ul>
-        </div>
+    <table id="world-market-clocks">
+      <tr>
+        <th class="market-name">New York</th>
+        <th class="market-name">London</th>
+        <th class="market-name">Frankfurt</th>
+        <th class="market-name">Shanghai</th>
+        <th class="market-name">Tokyo</th>
+      </tr>
       
-        <div style="text-align: center;">
-          <!-- <span class="title">A digital clock</span><br/> -->
-          <ul id="london-digital-clock" class="digital"> 
-            <li class="hour"></li><li class="colon">:</li>
-            <li class="min"></li><li class="colon">:</li>
-            <li class="sec"></li>
-            <li class="meridiem"></li>
-          </ul>
-        </div>  
-      </div>    
-    </td>
-    
-    <td>
-      <div id="frankfurt"><!-- +1 -->
-        <div style="text-align: center;">
-          <ul id="frankfurt-analog-clock" class="analog"> 
-            <li class="hour"></li>
-            <li class="min"></li>
-            <li class="sec"></li>
-          </ul>
-        </div>
+      <tr>
+        <td class="opening">09:30 - 16:00</td><!-- NY -->
+        <td class="opening">08:00 - 16:30</td><!-- london -->
+        <td class="opening">09:00 - 17:30</td><!-- Frankfurt -->
+        <td class="opening">09:30 - 15:00</td><!-- shanghai -->
+        <td class="opening">09:00 - 15:00</td><!-- tokyo -->
+      </tr>  
       
-        <div style="text-align: center;">
-          <!-- <span class="title">A digital clock</span><br/> -->
-          <ul id="frankfurt-digital-clock" class="digital"> 
-            <li class="hour"></li><li class="colon">:</li>
-            <li class="min"></li><li class="colon">:</li>
-            <li class="sec"></li>
-            <li class="meridiem"></li>
-          </ul>
-        </div>  
-      </div>    
-    </td>
+      <tr>
+      
+        <td>
+          <div id="new-york"><!-- -5 -->
+            <div style="text-align: center;">
+              <ul id="new-york-analog-clock" class="analog"> 
+                <li class="hour"></li>
+                <li class="min"></li>
+                <li class="sec"></li>
+              </ul>
+            </div>
+          
+            <div style="text-align: center;">
+              <!-- <span class="title">A digital clock</span><br/> -->
+              <ul id="new-york-digital-clock" class="digital"> 
+                <li class="hour"></li><li class="colon">:</li>
+                <li class="min"></li><li class="colon">:</li>
+                <li class="sec"></li>
+                <li class="meridiem"></li>
+              </ul>
+            </div>  
+          </div>    
+        </td>
         
-    <td>
-      <div id="shanghai"><!-- +8 -->
-        <div style="text-align: center;">
-          <ul id="shanghai-analog-clock" class="analog"> 
-            <li class="hour"></li>
-            <li class="min"></li>
-            <li class="sec"></li>
-          </ul>
-        </div>
-      
-        <div style="text-align: center;">
-          <!-- <span class="title">A digital clock</span><br/> -->
-          <ul id="shanghai-digital-clock" class="digital"> 
-            <li class="hour"></li><li class="colon">:</li>
-            <li class="min"></li><li class="colon">:</li>
-            <li class="sec"></li>
-            <li class="meridiem"></li>
-          </ul>
-        </div>  
-      </div>    
-    </td>   
         
-    <td>
-      <div id="tokyo"><!-- +9 -->
-        <div style="text-align: center;">
-          <ul id="tokyo-analog-clock" class="analog"> 
-            <li class="hour"></li>
-            <li class="min"></li>
-            <li class="sec"></li>
-          </ul>
-        </div>
+        <td>
+          <div id="london"><!-- 0 -->
+            <div style="text-align: center;">
+              <ul id="london-analog-clock" class="analog"> 
+                <li class="hour"></li>
+                <li class="min"></li>
+                <li class="sec"></li>
+              </ul>
+            </div>
+          
+            <div style="text-align: center;">
+              <!-- <span class="title">A digital clock</span><br/> -->
+              <ul id="london-digital-clock" class="digital"> 
+                <li class="hour"></li><li class="colon">:</li>
+                <li class="min"></li><li class="colon">:</li>
+                <li class="sec"></li>
+                <li class="meridiem"></li>
+              </ul>
+            </div>  
+          </div>    
+        </td>
+        
+        <td>
+          <div id="frankfurt"><!-- +1 -->
+            <div style="text-align: center;">
+              <ul id="frankfurt-analog-clock" class="analog"> 
+                <li class="hour"></li>
+                <li class="min"></li>
+                <li class="sec"></li>
+              </ul>
+            </div>
+          
+            <div style="text-align: center;">
+              <!-- <span class="title">A digital clock</span><br/> -->
+              <ul id="frankfurt-digital-clock" class="digital"> 
+                <li class="hour"></li><li class="colon">:</li>
+                <li class="min"></li><li class="colon">:</li>
+                <li class="sec"></li>
+                <li class="meridiem"></li>
+              </ul>
+            </div>  
+          </div>    
+        </td>
+            
+        <td>
+          <div id="shanghai"><!-- +8 -->
+            <div style="text-align: center;">
+              <ul id="shanghai-analog-clock" class="analog"> 
+                <li class="hour"></li>
+                <li class="min"></li>
+                <li class="sec"></li>
+              </ul>
+            </div>
+          
+            <div style="text-align: center;">
+              <!-- <span class="title">A digital clock</span><br/> -->
+              <ul id="shanghai-digital-clock" class="digital"> 
+                <li class="hour"></li><li class="colon">:</li>
+                <li class="min"></li><li class="colon">:</li>
+                <li class="sec"></li>
+                <li class="meridiem"></li>
+              </ul>
+            </div>  
+          </div>    
+        </td>   
+            
+        <td>
+          <div id="tokyo"><!-- +9 -->
+            <div style="text-align: center;">
+              <ul id="tokyo-analog-clock" class="analog"> 
+                <li class="hour"></li>
+                <li class="min"></li>
+                <li class="sec"></li>
+              </ul>
+            </div>
+          
+            <div style="text-align: center;">
+              <!-- <span class="title">A digital clock</span><br/> -->
+              <ul id="tokyo-digital-clock" class="digital"> 
+                <li class="hour"></li><li class="colon">:</li>
+                <li class="min"></li><li class="colon">:</li>
+                <li class="sec"></li>
+                <li class="meridiem"></li>
+              </ul>
+            </div>  
+          </div>    
+        </td>    
+        
+      </tr>
       
-        <div style="text-align: center;">
-          <!-- <span class="title">A digital clock</span><br/> -->
-          <ul id="tokyo-digital-clock" class="digital"> 
-            <li class="hour"></li><li class="colon">:</li>
-            <li class="min"></li><li class="colon">:</li>
-            <li class="sec"></li>
-            <li class="meridiem"></li>
-          </ul>
-        </div>  
-      </div>    
-    </td>    
-    
-  </tr>
+      <tr>
+        <td class="other-market-name">New York (NYSE)</td>
+        <td class="other-market-name">London (FTSE)</td>
+        <td class="other-market-name">Frankfurt (FSX)</td>
+        <td class="other-market-name">Shanghai (SSE)</td>
+        <td class="other-market-name">Tokyo (TSE)</td>
+      </tr>
+      
+      <tr>
+        <td class="other-market-name">NASDAQ</td>
+        <td class="other-market-name"></td>
+        <td class="other-market-name">Istanbul (ISE)</td>
+        <td class="other-market-name">Shenzhen (SZSE)</td>    
+        <td class="other-market-name">South Korea (KRX)</td>
+
+      </tr>
+        
+      <tr>
+        <td class="other-market-name">Toronto (TSX)</td>
+        <td class="other-market-name"></td>
+      </tr>
+
+
+    </table>
   
-  <tr>
-    <td class="other-market-name">New York (NYSE)</td>
-    <td class="other-market-name">London (FTSE)</td>
-    <td class="other-market-name">Frankfurt (FSX)</td>
-    <td class="other-market-name">Shanghai (SSE)</td>
-    <td class="other-market-name">Tokyo (TSE)</td>
-  </tr>
-  
-  <tr>
-    <td class="other-market-name">NASDAQ</td>
-    <td class="other-market-name"></td>
-    <td class="other-market-name">Istanbul (ISE)</td>
-    <td class="other-market-name">Shenzhen (SZSE)</td>    
-    <td class="other-market-name">South Korea (KRX)</td>
-
-  </tr>
-    
-  <tr>
-    <td class="other-market-name">Toronto (TSX)</td>
-    <td class="other-market-name"></td>
-  </tr>
 
 
-</table>
-	
-
-
-	</body>
+  </body>
 </html>

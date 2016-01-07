@@ -1,0 +1,5 @@
+/* Make <li> displays in 1 line */
+ul li
+{
+  display: inline;
+}

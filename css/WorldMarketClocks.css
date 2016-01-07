@@ -1,0 +1,27 @@
+/*
+  Digital clock
+*/
+ul.digital
+{
+	border-style: solid;
+	border-width: 1px;
+}
+
+ul.digital li
+{
+	font-weight: bold;
+}
+
+/*
+  General
+*/
+td.opening, td.other-market-name
+{
+	text-align: center;
+}
+
+td, th
+{
+	padding-right: 5em;
+}
+
